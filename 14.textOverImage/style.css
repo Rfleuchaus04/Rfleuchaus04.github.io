@@ -1,0 +1,48 @@
+/* Reset margin and padding */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container that holds the image and text box */
+.overlay-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* Full-page background image */
+.background-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Places the image behind the text */
+}
+
+/* Centered text box with a transparent background */
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text box */
+    background-color: rgba(255, 255, 255, 0.2); /* Clear (transparent) background */
+    padding: 20px 40px;
+    border-radius: 10px;
+    z-index: 2; /* Places the text box above the image */
+    border: 2px solid rgba(0, 0, 0, 0.3); /* Light border for better visibility */
+}
+
+/* Styling the text inside the text box */
+.text-box p {
+    color: black;
+    font-size: 36px;
+    font-family: 'Luminari', 'Georgia', serif; /* Victorian-style font */
+    margin: 0;
+    text-align: center;
+    letter-spacing: 2px; /* Spacing to give it a more Victorian feel */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Slight shadow to make the text stand out */
+}
