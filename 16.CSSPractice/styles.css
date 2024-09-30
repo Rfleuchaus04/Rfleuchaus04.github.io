@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url('images/bankRobinry.jpg');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the image in place on scroll */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Aligns the text at the bottom */
+    position: relative;
+}
+
+.text-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%; /* Adds a bit of spacing from the bottom */
+}
+
+.text-container p {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    color: #fff;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
