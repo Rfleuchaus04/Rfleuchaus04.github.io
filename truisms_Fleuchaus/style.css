@@ -1,0 +1,39 @@
+/* Ensure full-screen layout for video */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+/* Container for the video */
+#video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Fullscreen video styling */
+.video-fullscreen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Lower third text box styling */
+.text-box {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
